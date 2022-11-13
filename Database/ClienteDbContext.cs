@@ -17,7 +17,8 @@ namespace DevTour.Database
             cliente.HasKey(x => x.Id);
             cliente.Property(x => x.Id).HasColumnName("id").ValueGeneratedOnAdd();
             cliente.Property(x => x.Nome).HasColumnName("nome").IsRequired();
-            cliente.Property(x => x.DataNascimento).HasColumnName("data_nascimento").IsRequired();
+            cliente.Property(x => x.Sobrenome).HasColumnName("sobrenome").IsRequired();
+            cliente.Property(x => x.Email).HasColumnName("email").IsRequired();
 
 
         }

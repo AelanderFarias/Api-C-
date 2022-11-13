@@ -36,7 +36,7 @@ namespace DevTour.Controllers
             if(clienteExiste == null) return NotFound("Cliente não encotrado");
             
             clienteExiste.Nome = cliente.Nome ?? clienteExiste.Nome;
-            clienteExiste.DataNascimento = cliente.DataNascimento != new DateTime() ? cliente.DataNascimento : clienteExiste.DataNascimento;
+            clienteExiste.Sobrenome = cliente.Sobrenome != new DateTime() ? cliente.Sobrenome : clienteExiste.Sobrenome;
 
             _repository.AtualizarCliente(clienteExiste);
 
